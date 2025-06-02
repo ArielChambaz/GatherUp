@@ -1,0 +1,33 @@
+name: gatherup
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # On maintient firebase_core en 2.x
+  firebase_core: ^2.32.0
+
+  # ON PREND firebase_auth en 4.20.0 (c’est la première version 4.x qui
+  # est compatible avec firebase_core ^2.32.0)
+  firebase_auth: ^4.20.0
+
+  # On supprime cloud_firestore pour l’instant, afin de n’avoir que deux paquets Firebase
+  # (cloud_firestore provoquait la bascule de firebase_core vers une 3.x incompatible)
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
