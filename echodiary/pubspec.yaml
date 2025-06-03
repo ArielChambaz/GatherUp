@@ -11,16 +11,23 @@ dependencies:
   flutter:
     sdk: flutter
 
-  # On maintient firebase_core en 2.x
+  # Firebase core et authentification
   firebase_core: ^2.32.0
-
-  # ON PREND firebase_auth en 4.20.0 (c’est la première version 4.x qui
-  # est compatible avec firebase_core ^2.32.0)
   firebase_auth: ^4.20.0
 
-  # On supprime cloud_firestore pour l’instant, afin de n’avoir que deux paquets Firebase
-  # (cloud_firestore provoquait la bascule de firebase_core vers une 3.x incompatible)
+  # Firestore pour stocker les journaux
+  cloud_firestore: ^4.15.5
 
+  # Storage pour les images (album)
+  firebase_storage: ^11.6.5
+
+  # Pour les requêtes HTTP (citations)
+  http: ^0.13.6
+
+  # Pour sélectionner des images (album)
+  image_picker: ^1.0.7
+
+  # Icônes iOS
   cupertino_icons: ^1.0.8
 
 dev_dependencies:
